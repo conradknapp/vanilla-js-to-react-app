@@ -22,7 +22,7 @@ class Form {
     this.API_URL = `${API_URL}/${event.target.value}`;
     this.submitButton.disabled = !event.target.value;
   }
-  handleSubmit(data) {
+  handleSubmit(event) {
     event.preventDefault();
     axios
       .get(this.API_URL)
