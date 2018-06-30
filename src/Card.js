@@ -1,5 +1,4 @@
-const Card = ({ avatar_url, html_url, login, public_repos, bio }) => {
-  return `
+const Card = ({ avatar_url, html_url, login, public_repos, bio }) => `
     <li>
       <img src="${avatar_url}" style="height: 70px" />
       <a href="${html_url}">
@@ -9,6 +8,5 @@ const Card = ({ avatar_url, html_url, login, public_repos, bio }) => {
       <p>${bio ? `Bio: ${bio}` : ""}</p>
     </li>
   `;
-};
 
 export default Card;
